@@ -6,9 +6,51 @@
 
 a{
     text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0;
 }
 
 .ortala{
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    text-align: center; 
+    font-family: Arial, sans-serif;
+}
+
+.table{
+    margin: 40px;
+}
+
+th, td {
+    border: 2px solid rgb(211, 211, 211); 
+    padding: 10px; 
+    transition-duration: 0.4s;
+}
+
+th, td:hover{
+    background-color: rgb(211, 211, 211);
+    transition-duration: 0.4s;
+}
+
+th {
+    background-color: rgb(211, 211, 211); 
+}
+
+.footer{
+    background-color: rgb(52, 52, 52); 
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
