@@ -6,7 +6,7 @@
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 body {
@@ -21,6 +21,14 @@ body {
     flex-direction: column;
     background-color: rgb(52, 52, 52); 
     color: white;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
 table {
@@ -55,4 +63,18 @@ th {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+.footer a{
+    color: white;
+}
+
+.hikayeimg{
+    height: 300px;
+    margin: 30px;
+    border-radius: 30px;
+}
+.center p{
+    width: 900px;
+    background-color: rgb(239, 239, 239);
 }
