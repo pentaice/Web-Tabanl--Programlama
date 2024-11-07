@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+}
+
+.ortala{
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    background-color: rgb(52, 52, 52); 
+    color: white;
+}
+
+.footer{
+    background-color: rgb(52, 52, 52); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a{
+    color: white;
+}
+
+
+/* Tablonun tamamı */
+.schedule {
+    width: 50%;
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+/* Başlık satırına stil ekleme */
+.schedule-header {
+    background-color: rgb(255, 171, 171);
+}
+
+/* Gün başlık hücreleri */
+.day-cell {
+    border: 2px solid rgb(255, 171, 171);
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+/* Ana başlık hücresi */
+.title-cell {
+    background-color: rgb(255, 171, 171);
+    font-weight: bold;
+    border: 2px solid rgb(255, 171, 171);
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+/* Saat hücreleri */
+.time-slot {
+    border: 2px solid rgb(255, 171, 171);
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+/* Ders ve boş hücrelere ortak stil */
+.course-cell, .empty-cell {
+    border: 2px solid rgb(255, 171, 171);
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+/* Hover efekti tüm hücrelerde geçerli olacak *//*
+th, td:hover {
+    background-color: rgb(211, 211, 211);
+    transition-duration: 0.4s;
+}
+*/
+.empty-cell, .course-cell:hover{
+    background-color: rgba(255, 176, 176, 0.496);
+    transition-duration: 0.4s;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+  }
+
+  .c {
+    width: 100px;
+    height: 100px;
+    border-radius: 1000%;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+  .c1 {
+    background-color: rgb(255, 0, 0);
+    top: 0;
+    left: -20px;
+  }
+
+  .c2 {
+    background-color: blue;
+    top: 0px;
+    left: 40px;
+  }
+
+  .c3 {
+    background-color: yellow;
+    top: 50px;
+    left: 10px;
+  }
