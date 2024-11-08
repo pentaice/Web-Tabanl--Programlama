@@ -1,0 +1,127 @@
+/* Genel ayarlar */
+body {
+}
+
+
+.C {
+    width: 100px;
+    height: 100px;
+    border-radius: 1000%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.up-down {
+    background-color: rgb(255, 0, 0);
+    top: 250px;
+    left: 300px;
+}
+
+.scale-color {
+    background-color: blue;
+    top: 250px;
+    left: 500px;
+}
+
+.fade {
+    background-color: yellow;
+    top: 250px;
+    left: 700px;
+}
+.left-right{
+    background-color: rgb(0, 255, 21);
+    top: 250px;
+    left: 900px;
+}
+.rotate{
+    background-color: aqua;
+    top: 250px;
+    left: 1100px;
+}
+
+.yüz{
+    width: 13px;
+    height: 10px;
+    top: 30px ;
+    left: 60px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgb(30, 21, 21);
+}
+.yuz{
+    width: 13px;
+    height: 10px;
+    top: 30px ;
+    left: 30px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgb(30, 21, 21);
+}
+.aaz{
+    width: 22px;
+    height: 4px;
+    top: 60px ;
+    left: 45px;
+    border-radius: 20%;
+    position: absolute;
+    background-color: black;
+}
+
+div {
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Yukarı aşağı gidip gelen animasyon */
+.up-down {
+    animation: upDown 2s infinite alternate;
+}
+
+@keyframes upDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(50px); }
+}
+
+/* Büyüyüp küçülen ve rengi değişen animasyon */
+.scale-color {
+    animation: scaleColor 2s infinite alternate;
+}
+
+@keyframes scaleColor {
+    0% { transform: scale(1); background-color: #ff0000; }
+    100% { transform: scale(1.2); background-color: #00ff00; }
+}
+
+/* Transparan değeri artan ve azalan animasyon */
+.fade {
+    animation: fadeInOut 2s infinite alternate;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+/* Sağa sola gidip gelen animasyon */
+.left-right {
+    animation: leftRight 2s infinite alternate;
+}
+
+@keyframes leftRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50px); }
+}
+
+/* Dönen animasyon */
+.rotate {
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
