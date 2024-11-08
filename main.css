@@ -11,6 +11,7 @@ a{
 
 body {
     margin: 0;
+    background-color: rgb(237, 234, 234);
 }
 
 .ortala{
@@ -85,7 +86,4 @@ figure{
 
 .bosluk{
     height: 400px;
-}
-
-.bootdiv{
 }
