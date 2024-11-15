@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 8 - JS</title>
+    <link rel="stylesheet" href="main.css">
+
+
+
+    <style>
+        button{
+            border-radius: 5px;
+            border: solid 1px black;
+            padding: 5px;
+            margin: 2px;
+            color: white;
+            background-color: black;
+            transition-duration: 0.5s;
+            width: 100px;
+        }
+        button:hover{
+            background-color: #5f5f5f;
+            border: #5f5f5f;
+            border: solid 1px rgb(203, 203, 203);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ortala">
+        <h1>Javascript</h1>
+    </div>
+
+    <div class="center">
+        
+        <img id="resim" src="img/uzul.jpg" style="width:100px; margin: 5px; height: 100px; border-radius: 10px; border: solid 3px black;">
+        <button onclick="document.getElementById('resim').src='img/gulumse.jpg'">Turn on the light GÜLÜMSE</button>
+        <button onclick="document.getElementById('resim').src='img/uzul.jpg'">Turn off the light ÜZÜL</button>
+        
+    </div>
+
+    <div class="footer">
+        <a href="index.html" target="">Anasayfaya Dön</a>
+    </div>
+</body>
+
+</html> 
