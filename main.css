@@ -32,6 +32,11 @@ body {
     padding: 20px;
 }
 
+.center2{
+    display: flex;
+    justify-content: center;
+}
+
 table {
     width: 50%;
     margin: 0 auto; 
