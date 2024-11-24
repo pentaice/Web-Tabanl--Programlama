@@ -1,0 +1,104 @@
+#modal {
+    color: white;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 20px;
+    background-color: rgb(52, 52, 52);
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease, visibility 2s ease;
+}
+
+#modal.show {
+   opacity: 1;
+   visibility: visible;
+}
+
+
+
+
+
+.question {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fefefe52;
+    width: 500px;
+}
+.question h3 {
+    margin: 0 0 10px;
+}
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+.options li {
+    margin: 5px 0;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+button:hover {
+    background-color: rgba(52, 52, 52, 0.601);
+}
+#result {
+    background-color: rgb(52, 52, 52);
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Özel radio düğmesi */
+input[type="radio"] + label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+input[type="radio"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Radio seçildiğinde stil değişimi */
+input[type="radio"]:checked + label:before {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+/* Hover efekti */
+input[type="radio"] + label:hover {
+    color: #4CAF50;
+}
+
+input[type="radio"] + label:before:hover {
+    border-color: #4CAF50;
+}

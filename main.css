@@ -60,7 +60,7 @@ th, td {
 }
 
 th, td:hover{
-    background-color: rgb(114, 255, 112);
+    background-color: rgba(52, 52, 52, 0.337);
     transition-duration: 0.4s;
 }
 
