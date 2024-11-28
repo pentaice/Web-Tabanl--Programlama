@@ -1,5 +1,6 @@
 /* Genel ayarlar */
-body {
+#bos {
+    height: 100vh;
 }
 
 

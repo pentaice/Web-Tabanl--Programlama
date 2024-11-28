@@ -16,6 +16,7 @@ a:hover{
 body {
     margin: 0;
     background-color: rgb(190, 190, 190);
+    background: linear-gradient(to bottom, #ffffff, rgb(128, 128, 128));
 }
 
 .ortala{
