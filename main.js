@@ -62,3 +62,79 @@ function calculateScore() {
     const result = document.getElementById('result');
     result.textContent = `Test Sonucu: ${score} / ${totalQuestions}`;
 }
+
+
+
+//json işi
+// JSON dosyasını içe aktarma ve formu dinamik olarak doldurma
+fetch('./sorular.json')
+    .then(response => response.json())
+    .then(data => populateForm(data.questions))
+    .catch(error => console.error('Hata:', error));
+
+// Soruları formun içine ekleme
+function populateForm(questions) {
+    const form = document.getElementById('testForm');
+    questions.forEach(question => {
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('question');
+
+        const questionTitle = document.createElement('h3');
+        questionTitle.textContent = `${question.id}. ${question.text}`;
+        questionDiv.appendChild(questionTitle);
+
+        const optionsList = document.createElement('ul');
+        optionsList.classList.add('options');
+
+        question.options.forEach(option => {
+            const optionItem = document.createElement('li');
+
+            const input = document.createElement('input');
+            input.type = 'radio';
+            input.id = option.id;
+            input.name = `q${question.id}`;
+            input.value = option.value;
+
+            const label = document.createElement('label');
+            label.htmlFor = option.id;
+            label.textContent = option.text;
+
+            optionItem.appendChild(input);
+            optionItem.appendChild(label);
+            optionsList.appendChild(optionItem);
+        });
+
+        questionDiv.appendChild(optionsList);
+        form.insertBefore(questionDiv, form.lastElementChild);
+    });
+}
+
+// Skor hesaplama
+function calculateScore() {
+    const form = document.getElementById('testForm');
+    const resultDiv = document.getElementById('result');
+    let score = 0;
+
+    // Örnek doğru cevaplar
+    const correctAnswers = {
+        q1: 'b',
+        q2: 'a',
+        q3: 'c',
+        q4: 'b',
+        q5: 'b',
+        q6: 'a',
+        q7: 'a',
+        q8: 'a',
+        q9: 'a',
+        q10: 'b'
+    };
+
+    for (const [key, correctValue] of Object.entries(correctAnswers)) {
+        const selectedOption = form.querySelector(`input[name="${key}"]:checked`);
+        if (selectedOption && selectedOption.value === correctValue) {
+            score++;
+        }
+    }
+
+    resultDiv.textContent = `Toplam Skorunuz: ${score} / ${Object.keys(correctAnswers).length}`;
+}

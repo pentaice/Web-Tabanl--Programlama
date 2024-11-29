@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open ders9.html",
+            "file": "c:\\Users\\emre2\\OneDrive\\Belgeler\\GitHub\\Web-Tabanli-Programlama\\ders9.html"
+        }
+    ]
+}

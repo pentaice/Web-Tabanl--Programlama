@@ -1,0 +1,95 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "text": "JavaScript hangi olay ile sayfa yüklendiğinde çalıştırılabilir?",
+        "options": [
+          { "id": "q1a", "value": "a", "text": "onClick" },
+          { "id": "q1b", "value": "b", "text": "onLoad" },
+          { "id": "q1c", "value": "c", "text": "onHover" }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "JavaScript'te DOM manipülasyonu için hangi yöntem kullanılır?",
+        "options": [
+          { "id": "q2a", "value": "a", "text": "document.querySelector()" },
+          { "id": "q2b", "value": "b", "text": "window.alert()" },
+          { "id": "q2c", "value": "c", "text": "console.log()" }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Bir elementin görünürlüğünü değiştirmek için hangi özellik kullanılır?",
+        "options": [
+          { "id": "q3a", "value": "a", "text": "width" },
+          { "id": "q3b", "value": "b", "text": "color" },
+          { "id": "q3c", "value": "c", "text": "display" }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Bir dizi elemanlarının rastgele seçimi için hangi yöntem kullanılır?",
+        "options": [
+          { "id": "q4a", "value": "a", "text": "Math.round()" },
+          { "id": "q4b", "value": "b", "text": "Math.random()" },
+          { "id": "q4c", "value": "c", "text": "Math.ceil()" }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Bir butonun tıklanma olayını algılamak için hangi olay kullanılır?",
+        "options": [
+          { "id": "q5a", "value": "a", "text": "hover" },
+          { "id": "q5b", "value": "b", "text": "click" },
+          { "id": "q5c", "value": "c", "text": "focus" }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Bir HTML elementi ekranda animasyonlu şekilde görünmez yapmak için hangi özellik kullanılır?",
+        "options": [
+          { "id": "q6a", "value": "a", "text": "opacity" },
+          { "id": "q6b", "value": "b", "text": "padding" },
+          { "id": "q6c", "value": "c", "text": "margin" }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "`document.getElementById()` ne işe yarar?",
+        "options": [
+          { "id": "q7a", "value": "a", "text": "Belirli bir ID'ye sahip elementi seçer." },
+          { "id": "q7b", "value": "b", "text": "Tüm elementleri seçer." },
+          { "id": "q7c", "value": "c", "text": "Yeni bir ID oluşturur." }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "JavaScript'te fonksiyon nasıl tanımlanır?",
+        "options": [
+          { "id": "q8a", "value": "a", "text": "function myFunction() { ... }" },
+          { "id": "q8b", "value": "b", "text": "myFunction() -> { ... }" },
+          { "id": "q8c", "value": "c", "text": "def myFunction { ... }" }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "CSS stillerini JavaScript ile değiştirmek için hangi yöntem kullanılır?",
+        "options": [
+          { "id": "q9a", "value": "a", "text": "element.style.property" },
+          { "id": "q9b", "value": "b", "text": "element.setStyle()" },
+          { "id": "q9c", "value": "c", "text": "element.updateStyle()" }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "Bir HTML sayfasında JavaScript dosyası nasıl eklenir?",
+        "options": [
+          { "id": "q10a", "value": "a", "text": "&lt;js src=\"file.js\"&gt;&lt;/js&gt;" },
+          { "id": "q10b", "value": "b", "text": "&lt;script src=\"file.js\"&gt;&lt;/script&gt;" },
+          { "id": "q10c", "value": "c", "text": "&lt;link js=\"file.js\"&gt;" }
+        ]
+      }
+    ]
+  }
+  
