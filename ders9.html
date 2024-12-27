@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/ders9.css">
     <link rel="stylesheet" href="css/phone.css">
+
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(7, 50px); /* 7 sütun */
+            gap: 5px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+    </style>
+
 </head>
 <body>
     <div class="ortala">
@@ -23,7 +48,7 @@
         
 
 
-        <!-- Soruları aynı formatta eklemeye devam edebilirsiniz -->
+        
         <button type="button" onclick="calculateScore()">Testi Bitir</button>
     </form>
 
@@ -37,6 +62,24 @@
     <div class="center">
         <canvas id="myCanvas" width="500" height="500" style="border:1px solid black;"></canvas>
     </div>
+
+    <div class="container" id="container"></div>
+
+    <script> // BU KOD YUKARDAKİ DİVİN KODUDUR main.js e atılmadı 
+        const container = document.getElementById('container');
+        const rows = 7; 
+        const cols = 7;
+
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                const circle = document.createElement('div');
+                circle.classList.add('circle');
+                const hue = (i * 50 + j * 10) % 360; 
+                circle.style.borderColor = `hsl(${hue}, 100%, 50%)`;
+                container.appendChild(circle);
+            }
+        }
+    </script>
 
 
     <div class="footer">

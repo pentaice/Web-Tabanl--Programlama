@@ -98,7 +98,16 @@ figure{
 
 .bosluk{
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bosluk2{
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bosluk2{
+    text-align: center;
 }
